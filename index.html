@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Brayval-coffee</title>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="№" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Body code -->
+    <header class="header" id="header">
+      <nav class="navbar" id="nav-bar">
+        <div class="menu">
+          <div class="menu__left">
+            <div class="menu__icon" id="header-img">
+              <img src="./img/icon.png" alt="" />
+            </div>
+            <div class="menu__title">твой интернет магазин</div>
+          </div>
+          <div class="menu__right">
+            <ul class="menu-list">
+              <li class="menu-list-li">
+                <a href="#main" class="nav-link">
+                  <div class="menu__anchor">Главная</div>
+                </a>
+              </li>
+              <li class="menu-list-li">
+                <a href="#goods" class="nav-link">
+                  <div class="menu__anchor">Товары</div>
+                </a>
+              </li>
+              <li class="menu-list-li">
+                <a href="#main" class="nav-link">
+                  <div class="menu__anchor">Акции</div>
+                </a>
+              </li>
+              <li class="menu-list-li">
+                <a href="#about-us" class="nav-link">
+                  <div class="menu__anchor">О нас</div>
+                </a>
+              </li>
+              <li class="menu-list-li">
+                <a href="#" class="nav-link">
+                  <div class="menu__anchor">Контакты</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <main class="main" id="main">
+        <div class="order-form">
+          <h1 class="order-form__title title">Приглашаем в мир кофе</h1>
+          <form
+            action="https://www.freecodecamp.com/email-submit"
+            id="form"
+            name="email-form"
+            autocomplete="on"
+          >
+            <input
+              type="email"
+              id="email"
+              class="order-form__input"
+              placeholder="Введите Ваш email адрес"
+              required
+            />
+            <input
+              type="submit"
+              id="submit"
+              class="order-form__submit-button button"
+              value="Войти"
+            />
+          </form>
+        </div>
+        <div class="advantages">
+          <ul class="advantages-list">
+            <li class="advantages-list__item">
+              <img
+                src="./img/discount.svg"
+                alt=""
+                class="advantages-list__icon"
+              />
+              <div class="advantages-list__text">
+                <h2 class="advantages-list__title title">Цены</h2>
+                <p>У нас Вы найдете всегда отличные цены на все товары</p>
+              </div>
+            </li>
+            <li class="advantages-list__item">
+              <img
+                src="./img/megaphone_promotions.svg"
+                alt=""
+                class="advantages-list__icon"
+              />
+              <div class="advantages-list__text">
+                <h2 class="advantages-list__title title">Акции</h2>
+                <p>Еженедельные акции на определенную группу товаров</p>
+              </div>
+            </li>
+            <li class="advantages-list__item">
+              <img
+                src="./img/deliverry_hands.svg"
+                alt=""
+                class="advantages-list__icon"
+              />
+              <div class="advantages-list__text">
+                <h2 class="advantages-list__title title">Самовывоз</h2>
+                <p>
+                  С понедельника по субботу по предварительному звонку можете
+                  забрать Ваш заказ.
+                </p>
+              </div>
+            </li>
+            <li class="advantages-list__item">
+              <img
+                src="./img/deliverry.svg"
+                alt=""
+                class="advantages-list__icon"
+              />
+              <div class="advantages-list__text">
+                <h2 class="advantages-list__title title">Доставка по Киеву</h2>
+                <p>
+                  Быстрая, оперативная доставка курьером по Киеву. Если сумма
+                  товара от 1000 грн, доставка - бесплатная. До 1000 грн -
+                  доставка составит 60 грн.
+                </p>
+              </div>
+            </li>
+            <li class="advantages-list__item">
+              <img
+                src="./img/new-post.svg"
+                alt="alt"
+                class="advantages-list__icon"
+              />
+              <div class="advantages-list__text">
+                <h2 class="advantages-list__title title">
+                  Доставка любым перевозчиком
+                </h2>
+                <p>Новая Почта, Justin, Укрпочта</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="about-us" id="about-us">
+          <h2 class="title">О компании "Brayval"</h2>
+          <p class="about-us__text">
+            Brayval (Брэйвал) – компания, которая с 2011 года специализируется
+            на сервисном обслуживании кофейного оборудования. У нас можно
+            быстро, качественно и недорого отремонтировать кофемашины самых
+            популярных брендов на рынке Украины. Мы предлагаем в аренду на
+            выгодных условиях кофеварки для дома, офиса, кафе, бара или
+            ресторана. У нас можно приобрести кофе, чай, расходники по самым
+            низким ценам. Мы всегда предоставляем клиентам только качественный и
+            проверенный товар.
+          </p>
+          <p class="about-us__subtext">
+            Для нас самое важное – довольный клиент. Для нас важны Вы!
+          </p>
+          <div class="about-us__video">
+            <iframe
+              id="video"
+              src="https://www.youtube.com/embed/XfTYupTZPc0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="card-items">
+          <h2 class="title" id="goods">Популярные товары</h2>
+          <ul class="card-items__list">
+            <li class="card-items__item card-item">
+              <div class="card-item__img">
+                <img
+                  src="./img/photo-1501843508755-af0829d48618.jpg"
+                  alt="alt"
+                />
+              </div>
+              <h3 class="card-item__title">Наименование продукта</h3>
+              <div class="card-item__price">200$</div>
+              <div class="card-item__text">Lorem ipsum dolor sit amet.</div>
+              <button class="card-item__button button">Заказать</button>
+            </li>
+            <li class="card-items__item card-item">
+              <div class="card-item__img">
+                <img
+                  src="./img/photo-1501843508755-af0829d48618.jpg"
+                  alt="alt"
+                />
+              </div>
+              <h3 class="card-item__title">Наименование продукта</h3>
+              <div class="card-item__price">200$</div>
+              <div class="card-item__text">Lorem ipsum dolor sit amet.</div>
+              <button class="card-item__button button">Заказать</button>
+            </li>
+            <li class="card-items__item card-item">
+              <div class="card-item__img">
+                <img
+                  src="./img/photo-1501843508755-af0829d48618.jpg"
+                  alt="alt"
+                />
+              </div>
+              <h3 class="card-item__title">Наименование продукта</h3>
+              <div class="card-item__price">200$</div>
+              <div class="card-item__text">Lorem ipsum dolor sit amet.</div>
+              <button class="card-item__button button">Заказать</button>
+            </li>
+            <li class="card-items__item card-item">
+              <div class="card-item__img">
+                <img
+                  src="./img/photo-1501843508755-af0829d48618.jpg"
+                  alt="alt"
+                />
+              </div>
+              <h3 class="card-item__title">Наименование продукта</h3>
+              <div class="card-item__price">200$</div>
+              <div class="card-item__text">Lorem ipsum dolor sit amet.</div>
+              <button class="card-item__button button">Заказать</button>
+            </li>
+            <li class="card-items__item card-item">
+              <div class="card-item__img">
+                <img
+                  src="./img/photo-1501843508755-af0829d48618.jpg"
+                  alt="alt"
+                />
+              </div>
+              <h3 class="card-item__title">Наименование продукта</h3>
+              <div class="card-item__price">200$</div>
+              <div class="card-item__text">Lorem ipsum dolor sit amet.</div>
+              <button class="card-item__button button">Заказать</button>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <div class="footer">
+        <ul class="footer__nav">
+          <li class="footer__list">
+            <a href="#about-us"><div class="footer__href">О нас</div></a>
+          </li>
+
+          <li class="footer__list">
+            <a href="#"> <div class="footer__href">Контакты</div></a>
+          </li>
+
+          <li class="footer__list">
+            <a href="#"> <div class="footer__href">Отзывы</div></a>
+          </li>
+        </ul>
+        <div class="footer__copyright">Copyright 2021. Brayval-coffee</div>
+      </div>
+    </div>
+    <!-- End of body code -->
+    <!-- Scripts after -->
+    <!-- <script src="./js/common.js"></script> -->
+  </body>
+</html>

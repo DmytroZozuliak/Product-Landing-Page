@@ -1,0 +1,346 @@
+// <МИКСИНЫ>============================================
+
+// </МИКСИНЫ>===========================================
+// <ШРИФТЫ>=============================================
+// <ПОДКЛЮЧАЕМ ШРИФТЫ>==================================
+
+// </ПОДКЛЮЧАЕМ ШРИФТЫ>=================================
+// <ШРИФТ ПО УМОЛЧАНИЮ==================================
+
+// </ШРИФТ ПО УМОЛЧАНИЮ=================================
+// </ШРИФТЫ>============================================
+// <ПЕРЕМЕННЫЕ==========================================
+$bgcolor1: rgb(167, 67, 18);
+$bgcolor2: rgb(194, 114, 40);
+$bgyellow: rgb(120, 192, 37);
+$bgcontainer: rgb(245, 244, 236);
+
+// </ПЕРЕМЕННЫЕ=========================================
+// <ОБНУЛЕНИЕБ ОБЩИЕ ПАРАМЕТРЫ==========================
+@import '_reset';
+body {
+  color: #000;
+  font-size: 14px;
+  background: $bgcontainer;
+}
+a {
+  text-decoration: none;
+}
+
+// </ОБНУЛЕНИЕБ ОБЩИЕ ПАРАМЕТРЫ=========================
+// <ОСНОВНОЙ КОД========================================
+
+// header
+
+.header {
+  margin: 0px auto;
+}
+.navbar {
+  background: linear-gradient(80deg, $bgcolor2 50%, $bgcolor1 100%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  &__left {
+    margin: 0px 20px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    //  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    margin: 0px 30px 0px 0px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: white;
+    align-self: flex-end;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    margin: 0px 40px 0px 0px;
+    .menu-list-li {
+      display: inline-block;
+      padding-left: 30px;
+    }
+  }
+
+  &__anchor {
+    font-size: 1.6rem;
+    color: white;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.5s ease;
+      color: whitesmoke;
+    }
+  }
+}
+
+// main
+.container {
+  max-width: 1140px;
+  min-width: 350px;
+  margin: 0px auto;
+  min-height: 1400px;
+}
+
+//submit form
+
+.order-form {
+  margin: 140px auto 40px auto;
+  text-align: center;
+  &__input {
+    width: 300px;
+    height: 50px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    margin: 15px auto;
+  }
+
+  &__submit-button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    font-size: 1.3rem;
+    margin: 0px auto;
+  }
+}
+.button {
+  text-align: center;
+  background: $bgcolor2;
+  margin: 0px auto;
+  border-radius: 10px;
+  color: whitesmoke;
+  &:hover {
+    background: $bgcolor1;
+    transition: all 0.5s ease;
+  }
+}
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: arial, sans-serif;
+}
+
+// Advantages
+
+.advantages {
+  margin-bottom: 50px;
+}
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-left: 5%;
+  &__item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+    background: $bgcolor2;
+    border-radius: 50%;
+  }
+
+  &__text {
+    margin-left: 30px;
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+// about us
+
+.about-us {
+  margin: 0px auto;
+  text-align: center;
+  &__text {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  &__subtext {
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 10px auto;
+  }
+
+  // video properties !
+  &__video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+// Card items
+
+.card-items {
+  margin: 30px 0px 50px 0px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    margin: 0px 0px 40px 0px;
+  }
+  .title {
+    text-align: center;
+  }
+}
+.card-item {
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+  font-family: arial;
+
+  &__img {
+    width: 300px;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 5px 0px 2px 0px;
+  }
+
+  &__price {
+    font-size: 1.3rem;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+  }
+
+  &__button {
+    margin: 5px 0px;
+    width: 200px;
+    font-size: 1.4rem;
+  }
+}
+
+//footer
+
+.footer {
+  background-color: $bgcolor2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px 20px;
+  &__nav {
+    display: flex;
+  }
+
+  &__list {
+    font-size: 1.4rem;
+    padding-left: 25px;
+    text-decoration: none;
+  }
+
+  &__href {
+    color: white;
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.5s ease;
+      color: whitesmoke;
+    }
+  }
+
+  &__copyright {
+    font-size: 1.2rem;
+    margin: 10px 0px 0px 0px;
+  }
+}
+
+//media запросы
+@media (max-width: 1199.9px) {
+  .menu {
+    &__title {
+      display: none;
+    }
+    &__right {
+      margin: 0px 20px 0px 0px;
+      .menu-list-li {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 991.9px) {
+  .menu {
+    &__right {
+      margin: 0px 10px 0px 0px;
+      .menu-list-li {
+        padding-left: 5px;
+      }
+    }
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 767.9px) {
+  .menu {
+    &__right {
+      display: none;
+    }
+  }
+  .footer {
+    &__list {
+      padding-left: 10px;
+    }
+  }
+}
+@media (max-width: 575.9px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .order-form {
+    &__input {
+      width: 95%;
+    }
+  }
+  .navbar {
+    display: none;
+  }
+  .order-form {
+    margin-top: 20px;
+  }
+}
+
+// </ОСНОВНОЙ КОД=======================================
